@@ -29,11 +29,14 @@ De opdracht voldoet ***minimaal*** aan de volgende voorwaarden:
 Je gaat een server maken die aan de volgende voorwaarden voldoet:
 1. Linux Ubuntu server (nieuwste versie) deze server biedt de volgende services:
     * Samba (voor vier gebruikers);
-      * maak in de map /home een map [ sambagebruiker ],
+      * maak in de map /home een map [ sambagebruiker ];
       * de groep users is eigenaar van deze map en heeft RWX rechten;
       * maak een gebruiker aan met een wachtwoord en een samba-wachtwoord;
-      * open met je favoriete editor het bestand smb.conf en zorg ervoor dat de instellingen goed komen te staan
-      * controleer via Windows of de shares te benaderen zijn.  
+      * open met je favoriete editor het bestand smb.conf en zorg ervoor dat de instellingen goed komen te staan;
+      * De gebruikers kunnen wel lezen bij elkaar maar niet schrijven m.u.v.:
+        * een gebruiker (keuze is vrij) mag nergens kijken alleen zijn eigen map;
+        * een gebruiker (keuze is vrij) mag overals ook schrijven;
+      * controleer via Windows of de shares te benaderen zijn;  
 2. Backups - zorg dat de html mappen worden gebackupped, gebruik hiervoor tar;
 3. Zorg voor een SSH verbinding naar de server;
 4. de taken die geautomatiseerd kunnen worden ***(denk aan de backups)*** dienen te gebeuren door middel van scripts.
