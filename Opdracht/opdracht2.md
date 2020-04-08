@@ -35,7 +35,7 @@ Je gaat een server maken die aan de volgende voorwaarden voldoet:
       * open met je favoriete editor het bestand smb.conf en zorg ervoor dat de instellingen goed komen te staan;
       * De gebruikers kunnen wel lezen bij elkaar maar niet schrijven m.u.v.:
         * een gebruiker (keuze is vrij) mag nergens kijken alleen zijn eigen map;
-        * een gebruiker (keuze is vrij) mag overals ook schrijven;
+        * een gebruiker (keuze is vrij) mag overal ook schrijven;
       * controleer via Windows of de shares te benaderen zijn;  
 2. Backups - zorg dat de html mappen worden gebackupped, gebruik hiervoor tar;
 3. Zorg voor een SSH verbinding naar de server;
