@@ -8,7 +8,7 @@ SCRIPT
 
 
 Vagrant.configure('2') do |config|
-    config.ssh.insert_key = false
+    #config.ssh.insert_key = false
 
     # set default settings
     config.vm.box = "ubuntu/bionic64"
@@ -26,6 +26,6 @@ Vagrant.configure('2') do |config|
 	# Copy from folder to notes
         machine.vm.provision "shell", inline: $useraddscript
         machine.vm.synced_folder "Opdracht/", "/home/student/opdracht"
-        machine.vm.provision "file", source: "~/.vagrant.d/insecure_private_key", destination: "$HOME/.ssh/id_rsa"
+        #machine.vm.provision "file", source: "~/.vagrant.d/insecure_private_key", destination: "$HOME/.ssh/id_rsa"
     end
 end
